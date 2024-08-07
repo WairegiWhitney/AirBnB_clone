@@ -1,4 +1,4 @@
-from datetime import datetime
+"""from datetime import datetime
 class EC:
     def __init__(self,id,name,c=None,u=None):
         self.id=id
@@ -14,4 +14,6 @@ class EC:
         return my_dict
 
 er=EC(1,"wow")
-print(er.to_dict())
+print(er.to_dict())"""
+
+
