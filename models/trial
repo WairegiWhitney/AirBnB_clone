@@ -1,0 +1,17 @@
+from datetime import datetime
+class EC:
+    def __init__(self,id,name,c=None,u=None):
+        self.id=id
+        self.name=name 
+        self.c=datetime.now()
+        self.u=datetime.now()
+    
+    def to_dict(self):
+        my_dict =self.__dict__.copy()
+        my_dict["__class__"]=self.__class__.__name__
+        my_dict["c"]=my_dict["c"].isoformat()
+        my_dict["u"]=my_dict["u"].isoformat()
+        return my_dict
+
+er=EC(1,"wow")
+print(er.to_dict())
